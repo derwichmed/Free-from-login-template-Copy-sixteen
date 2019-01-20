@@ -1,0 +1,84 @@
+body{
+    background-color: #e4e4e4
+}
+.form_wizard{
+    margin-top: 50px;
+}
+.form_wizard > div{
+    box-shadow: #747474 6px 6px 10px;
+}
+.form_wizard .image_effect{
+    position: relative;
+    width: 400px
+}
+.form_wizard .image_effect img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2
+}
+.form_wizard .image_effect div{
+    background-color: rgba(190,107,189,.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1
+}     
+.form_wizard .form{
+    background-color: white;
+    width: 300px;
+    padding: 10px
+}
+.form_wizard .form > strong{
+    font-weight: bold;
+    font-size: 25px
+}
+.form_wizard .form form input{
+    width: 100%;
+    border: none;
+    border-bottom: #c7c7c7 2px solid;
+}
+.form_wizard .form form input::placeholder{
+    color: #c7c7c7;
+    font-weight: bold
+}
+.form_wizard .form form label{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Raleway";
+    line-height: 26px;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: grey;
+    margin-top: 20px
+}
+.form_wizard .form form .div_one input{
+    width: 15px;
+    height: 15px
+}
+.form_wizard .form form .div_submit input[type=submit]{
+    width: 150px;
+    background-image: linear-gradient(to bottom,#cb79e7,#e557a3);
+    color: white;
+    border-bottom: none
+}
+.form_wizard .form form .div_submit a{
+    text-decoration: underline
+}
+@media(max-width: 500px){
+    .form_wizard{
+        padding: 10px
+    }
+    .form_wizard .image_effect,
+    .form_wizard .form{
+        display: block;
+        width: 100%
+    }
+    .form_wizard .image_effect{
+        height: 400px
+    }
+}
